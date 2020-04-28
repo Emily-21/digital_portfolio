@@ -1,0 +1,41 @@
+body {
+    color: coral;
+}
+
+/*  3 ways to do css
+
+1. inline css- simply is styling a particular tag,
+ on the line its created. not efficient if you need to do more
+ than one thing. avoid really. 1/10. 
+2. internal css - styling on each individual html page within
+the header tag...have to duplicate over multiple pages. 3/10
+3. external css - this is 8/10 for having 1 external css file...
+not great for massive sites. if you have multiple css files, it
+will display the one it reads LAST.
+ 
+ */
+
+* {
+ margin:0;
+ padding:0; 
+
+ } 
+ /* keep margin above padding for consistency */
+
+ .navbar {
+     background-color: darkcyan;
+     align-items: left;
+     display: flex; 
+/* flex will come up later */
+    justify-content: space-evenly;
+    padding: 30px 20px;
+ }
+ .navbar ul li {
+     list-style-type: none;
+     display: inline-block;
+ }
+
+ .navbar li a {
+     text-decoration: none;
+    padding: 15px 10px; /*top and bottom THEN left and right*/
+ }
